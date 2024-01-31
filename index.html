@@ -74,6 +74,9 @@
     text-align: right;
     flex-grow: 1;
   }
+  .clicked {
+    background-color: #A0A0A0; /* Or any gray color you prefer */
+  }
 </style>
 </head>
 <body>
@@ -100,5 +103,17 @@
     </li>
   </ul>
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const navItems = document.querySelectorAll('.nav-item');
+      
+      navItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+          // Add 'clicked' class to the nav-item
+          this.classList.add('clicked');
+        });
+      });
+    });
+</script>
 </body>
 </html>
