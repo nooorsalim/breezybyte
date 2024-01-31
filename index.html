@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breezy Byte</title>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=YourFontFamily'); /* Replace with your Google Fonts link or equivalent */
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'YourFontFamily', sans-serif; /* Replace with your actual font-family */
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+    background-image: url('path-to-your-background-image.jpg'); /* Replace with your GitHub hosted image path */
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+  }
+  .logo {
+    margin-bottom: 20px; /* Space between logo and buttons */
+    background-image: url('path-to-your-logo.png'); /* Replace with your GitHub hosted logo path */
+    width: 200px; /* Adjust based on actual logo size */
+    height: 100px; /* Adjust based on actual logo size */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .navigation {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-item {
+    background-color: #FFFFFF; /* Use the exact color code from your design */
+    margin: 10px;
+    display: flex;
+    justify-content: space-between; /* Positions the icon and text on opposite ends */
+    align-items: center;
+    width: 300px; /* Adjust to desired width */
+    padding: 10px; /* Adjust to desired padding */
+    border-radius: 25px; /* Adjust as per your design */
+    box-sizing: border-box;
+    position: relative; /* For absolute positioning of the icon */
+  }
+  .nav-icon {
+    position: absolute;
+    left: 10px; /* Space between icon and button edge */
+    top: 50%;
+    transform: translateY(-50%); /* Center icon vertically */
+    width: 24px; /* Icon width */
+    height: 24px; /* Icon height */
+    background-image: url('path-to-your-icon.png'); /* Replace with your GitHub hosted icon path */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .nav-text {
+    margin-right: 10px; /* Space between text and button edge */
+    text-align: right;
+    flex-grow: 1;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <!-- Logo placeholder -->
+  <div class="logo"></div>
+  
+  <!-- Big text placeholder -->
+  <div class="big-text">BREEZY BYTE</div>
+
+  <ul class="navigation">
+    <!-- Navigation items with icon placeholders -->
+    <li class="nav-item">
+      <div class="nav-icon" style="background-image: url('path-to-your-home-icon.png');"></div> <!-- Replace with your GitHub hosted icon path -->
+      <span class="nav-text">Home</span>
+    </li>
+    <li class="nav-item">
+      <div class="nav-icon" style="background-image: url('path-to-your-google-play-icon.png');"></div> <!-- Replace with your GitHub hosted icon path -->
+      <span class="nav-text">Google Play Store</span>
+    </li>
+    <li class="nav-item">
+      <div class="nav-icon" style="background-image: url('path-to-your-apple-icon.png');"></div> <!-- Replace with your GitHub hosted icon path -->
+      <span class="nav-text">Apple App Store</span>
+    </li>
+  </ul>
+</div>
+</body>
+</html>
