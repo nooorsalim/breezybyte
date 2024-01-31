@@ -106,16 +106,24 @@
   </ul>
 </div>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const navItems = document.querySelectorAll('.nav-item');
-      
-      navItems.forEach(function(item) {
-        item.addEventListener('click', function() {
-          // Add 'clicked' class to the nav-item
-          this.classList.add('clicked');
-        });
+  document.addEventListener('DOMContentLoaded', function() {
+    const navItems = document.querySelectorAll('.nav-item');
+
+    navItems.forEach(function(item) {
+      item.addEventListener('mousedown', function() {
+        // Add 'clicked' class to the nav-item when mouse is pressed
+        this.classList.add('clicked');
+      });
+      item.addEventListener('mouseup', function() {
+        // Remove 'clicked' class from the nav-item when mouse is released
+        this.classList.remove('clicked');
+      });
+      item.addEventListener('mouseleave', function() {
+        // Also remove 'clicked' class if the cursor leaves the element before the mouse is released
+        this.classList.remove('clicked');
       });
     });
+  });
 </script>
 </body>
 </html>
