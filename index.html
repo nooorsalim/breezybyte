@@ -75,11 +75,16 @@
     flex-grow: 1;
     padding-left: 10px;
   }
+  .material-symbols-outlined {
+  font-size: 24px; /* Icon size */
+  color: #000; /* Icon color */
+  }
   .clicked {
     background-color: #A0A0A0; /* Or any gray color you prefer */
   }
 </style>
 </head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
 <body>
 <div class="container">
   <!-- Logo placeholder -->
@@ -92,7 +97,8 @@
     <!-- Navigation items with icon placeholders -->
     <li class="nav-item">
       <a href="https://www.google.com" class="nav-link">
-        <div class="nav-icon" style="background-image: url('path-to-your-home-icon.png');"></div> <!-- Replace with your GitHub hosted icon path -->
+        <!-- Use the Google Fonts icon -->
+        <span class="material-symbols-outlined nav-icon">stadia_controller</span>
         <span class="nav-text">Home</span>
       </a>
     </li>
