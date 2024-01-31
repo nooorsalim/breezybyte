@@ -50,30 +50,33 @@
     background-color: #FFFFFF; /* Use the exact color code from your design */
     margin: 10px;
     display: flex;
-    justify-content: space-between; /* Positions the icon and text on opposite ends */
     align-items: center;
     width: 300px; /* Adjust to desired width */
     padding: 10px; /* Adjust to desired padding */
     border-radius: 25px; /* Adjust as per your design */
     box-sizing: border-box;
-    position: relative; /* For absolute positioning of the icon */
   }
+  
+  .nav-link {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    text-decoration: none; /* Optional: removes underline from links */
+    color: inherit; /* Optional: ensures the text color is not the default blue */
+    width: 100%; /* Makes the whole nav-item clickable */
+  }
+
   .nav-icon {
-    position: absolute;
-    left: 10px; /* Space between icon and button edge */
-    top: 50%;
-    transform: translateY(-50%); /* Center icon vertically */
-    width: 24px; /* Icon width */
-    height: 24px; /* Icon height */
-    background-image: url('path-to-your-icon.png'); /* Replace with your GitHub hosted icon path */
-    background-size: contain;
-    background-repeat: no-repeat;
+    /* Adjustments for the Google Fonts icon */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center icon horizontally */
+    align-items: center; /* Center icon vertically */
+    margin-right: 10px; /* Spacing between icon and text */
   }
+
   .nav-text {
-    margin-right: 10px; /* Space between text and button edge */
-    text-align: right;
     flex-grow: 1;
-    padding-left: 10px;
+    text-align: left;
   }
   .material-symbols-outlined {
   font-size: 24px; /* Icon size */
@@ -97,9 +100,8 @@
     <!-- Navigation items with icon placeholders -->
     <li class="nav-item">
       <a href="https://www.google.com" class="nav-link">
-        <!-- Use the Google Fonts icon -->
-        <span class="material-symbols-outlined nav-icon">stadia_controller</span>
-        <span class="nav-text">Home</span>
+        <span class="material-symbols-outlined nav-icon">stadia_controller</span> <!-- Change the icon name to 'home' -->
+        <span class="nav-text">Itch.io</span>
       </a>
     </li>
     <li class="nav-item">
