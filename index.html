@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Breezy Byte</title>
 <style>
-  @import url('https://fonts.googleapis.com/css?family=YourFontFamily'); /* Replace with your Google Fonts link or equivalent */
+  @import url('https://fonts.googleapis.com/css2?family=Honk&display'); /* Replace with your Google Fonts link for the header */
+  @import url('https://fonts.googleapis.com/css?family=BodyFontFamily'); /* Replace with your Google Fonts link for the body */
   
   body, html {
     margin: 0;
@@ -77,17 +78,25 @@
     margin-right: 10px; /* Spacing between icon and text */
   }
 
-  .nav-text {
-    flex-grow: 1;
-    text-align: left;
+  .big-text {
+    font-family: 'Honk&display', Honk; /* Apply your header font-family here */
+    /* ... existing styles ... */
   }
+
+  .nav-text {
+    font-family: 'BodyFontFamily', sans-serif; /* Apply your button text font-family here */
+    /* ... existing styles ... */
+  }
+  
   .material-symbols-outlined {
   font-size: 24px; /* Icon size */
   color: #000000; /* Icon color */
   }
+  
   .clicked {
     background-color: #A0A0A0; /* Or any gray color you prefer */
   }
+  
 </style>
 </head>
 <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
